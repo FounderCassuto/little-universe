@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#100c18">
+  <meta name="description" content="A little world, kept just for two.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; media-src 'self' blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>A little world</title>
+  <link rel="icon" href="moon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="clarity.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="locked">
+  <a class="skip-link" href="#main">Skip to our little world</a>
+  <div class="sky" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <main id="entrance" class="entrance">
+    <div class="entrance-orbit" aria-hidden="true"></div>
+    <div class="lock-mark" aria-hidden="true">☾</div>
+    <p class="eyebrow">SOMETHING SMALL. SOMETHING JUST FOR YOU.</p>
+    <h1>A little world,<br><em>kept for two.</em></h1>
+    <p class="entrance-copy">There’s a little magic waiting on the other side.</p>
+    <form id="unlock-form" class="unlock-form">
+      <label for="access-key">Our secret key</label>
+      <div class="key-field"><input id="access-key" name="password" type="password" autocomplete="current-password" required spellcheck="false" aria-describedby="unlock-status"><button type="button" id="show-key" aria-label="Show secret key" aria-pressed="false">Show</button></div>
+      <button class="button primary" type="submit" id="unlock-button">Step inside <span aria-hidden="true">↗</span></button>
+      <p id="unlock-status" class="form-status" role="status" aria-live="polite"></p>
+    </form>
+    <p class="entrance-foot">A small place to return to. Whenever you like.</p>
+    <noscript>This little world needs JavaScript to open its encrypted keepsakes.</noscript>
+  </main>
+  <div id="world" hidden></div>
+  <dialog id="letter-dialog" class="letter-dialog"><button type="button" class="close-button" aria-label="Close note">×</button><div id="letter-body"></div></dialog>
+  <dialog id="memory-dialog" class="memory-dialog"><button type="button" class="close-button" aria-label="Close memory">×</button><div id="memory-body"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
