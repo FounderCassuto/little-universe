@@ -1,0 +1,44 @@
+.favorite-tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.favorite-tab{display:flex;align-items:center;justify-content:center;gap:12px;min-height:46px;padding:10px 20px;border:1px solid #a785be45;border-radius:6px;background:#1b1424;color:#c9b7d6;font-size:13px;line-height:1.5;transition:background .2s,border-color .2s}
+.favorite-tab>span{display:grid;place-items:center;min-width:22px;height:22px;padding:0 4px;border-radius:50%;background:#ffffff09;font-size:10px;color:#a58bb8}
+.favorite-tab:hover{border-color:#c5a4ed90}
+.favorite-tab[aria-pressed=true]{background:#c5a4ed;color:#21142e;border-color:#c5a4ed}
+.favorite-tab[aria-pressed=true]>span{background:#26143615;color:#49315e}
+.favorite-status{color:#b8a9c4;font-size:12px;margin:23px 0 16px;text-align:left}
+.favorite-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.favorite-grid[data-count="4"]{grid-template-columns:repeat(4,minmax(0,1fr))}
+.favorite-grid[data-count="3"]{grid-template-columns:repeat(3,minmax(0,1fr))}
+.favorite-card{padding:0;border:1px solid #b794cf38;border-radius:8px;background:#1b1424;overflow:hidden;text-align:left;min-width:0;transition:transform .2s,border-color .2s}
+.favorite-card:hover{transform:translateY(-3px);border-color:#c5a4ed99}
+.art-frame{position:relative;display:block;aspect-ratio:16/10;overflow:hidden;background:#18111f;isolation:isolate}
+.art-frame img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain}
+.art-placeholder{position:absolute;inset:0;display:grid;place-items:center;padding:12px;color:#b59ac7;font-family:var(--serif);font-size:16px;font-style:italic;text-align:center}
+.favorite-name{display:flex;justify-content:space-between;align-items:center;gap:8px;min-height:58px;padding:13px 14px;border-top:1px solid #b794cf25;font-size:13px;line-height:1.45;color:#e7d8f1}
+.favorite-name>span:last-child{color:#b593ce;flex-shrink:0}
+.court-credits{margin-top:26px;border-top:1px solid #b794cf25;padding-top:15px;font-size:12px;color:#aa95ba;line-height:1.8}
+.court-credits>summary{cursor:pointer;width:max-content;padding:8px 0;color:#bda5cf}
+.court-credits>p{margin:15px 0 12px}
+.court-credits ul{display:grid;grid-template-columns:1fr 1fr;gap:7px 25px;list-style:none;padding:0;margin:0}
+.court-credits a{color:#d0b4e5;text-decoration:underline;text-underline-offset:3px}
+.letter-friends{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:27px 0 8px}
+.letter-friends .art-frame{border:1px solid #b794cf30;border-radius:7px}
+.letter-friends .art-frame:after{content:'♡';position:absolute;right:7px;bottom:6px;color:#ebc4ff;background:#281533c4;border:1px solid #bd96d960;border-radius:50%;width:24px;height:24px;display:grid;place-items:center;font-size:15px;line-height:1}
+.letter-friends .art-placeholder{font-size:12px}
+.question-artwork{margin:20px 0 14px;border:1px solid #b794cf36;border-radius:7px;overflow:hidden}
+.question-artwork .art-frame{max-height:260px}
+.question-artwork figcaption{font-family:var(--serif);font-size:16px;font-style:italic;line-height:1.5;color:#d4b9e8;padding:14px 17px;border-top:1px solid #b794cf22}
+.court-link{font-size:12px;color:var(--lilac);display:inline-block;margin-top:14px;border-bottom:1px solid #b794cf44;padding-block:8px}
+.puzzle-friends{margin:22px 0 12px;max-width:270px;border:1px solid #b794cf22;border-radius:6px;overflow:hidden}
+.puzzle-friends .art-frame{max-height:150px}
+@media(max-width:1000px){.favorite-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.favorite-grid[data-count="4"]{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){
+  .favorite-tabs{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .favorite-tab{font-size:12px;padding:10px 12px;gap:8px}
+  .favorite-status{margin:20px 0 13px}
+  .favorite-grid,.favorite-grid[data-count="4"],.favorite-grid[data-count="3"]{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .favorite-name{font-size:12px;min-height:58px;padding:10px 12px}
+  .favorite-grid[data-count="3"] .favorite-card:last-child{grid-column:1/-1;justify-self:center;width:calc((100% - 12px)/2)}
+  .court-credits ul{grid-template-columns:1fr;gap:6px}
+  .letter-friends{gap:8px;margin-top:22px}
+  .question-artwork figcaption{font-size:15px;padding:12px 14px}
+}

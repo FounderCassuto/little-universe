@@ -1,0 +1,61 @@
+/* A simple four-chapter rhythm, with the same navigation on every screen. */
+html{scroll-padding-top:115px}
+html:has(body.quiet-motion){scroll-behavior:auto}
+.site-header.wrap{position:sticky;top:0;z-index:20;width:100%;height:90px;padding-inline:max(48px,calc((100% - 1120px)/2));background:#100c18f5;border-bottom:1px solid var(--line)}
+.site-header nav{display:flex;gap:25px}
+.site-header nav a{display:flex;align-items:center;min-height:44px;font-size:12px;color:#c6b6d2;white-space:nowrap}
+.site-header nav a:hover{color:#f0dcff}
+.site-header .icon-button{width:44px;height:44px}
+.hero-description{font-size:14px;line-height:1.9}
+.chapter-divider{margin-block:5px 58px}
+.poem-section{padding-top:60px;padding-bottom:36px}
+.poem-afterword{font-size:12px;line-height:1.8;max-width:660px}
+.letters{padding-top:66px;padding-bottom:82px}
+.letters .section-intro h2{font-size:40px}
+.section-intro>p:last-child,.question-heading>p:last-child{font-size:14px;line-height:1.9}
+.section-intro .eyebrow,.poem-aside .eyebrow{font-size:10px}
+.note-art{justify-content:flex-start!important;height:58px}
+.note-card{padding:30px}
+.note-card h3{font-size:27px}
+.note-teaser{font-size:13px;line-height:1.8}
+.note-open{font-size:12px}
+.memories,.favorites-section,.play-section{border-top:1px solid var(--line);padding-top:82px;padding-bottom:82px}
+.favorites-section .section-intro{margin-bottom:30px}
+.catch-panel>p,.puzzle-riddle,.puzzle-prompt,.puzzle-feedback,.question-reply{font-size:13px}
+.questions-section{padding-top:0;padding-bottom:85px;gap:48px}
+.question-footnote{font-size:11px}
+.letter-copy{font-size:14px;line-height:1.9}
+.full-memory-caption p{font-size:14px}
+@media(max-width:1000px){.site-header.wrap{padding-inline:32px}.site-header nav{gap:16px}.site-header nav a{font-size:11px}.wordmark{gap:10px}}
+@media(max-width:760px){
+  html{scroll-padding-top:145px}
+  .site-header.wrap{height:auto;min-height:116px;display:grid;grid-template-columns:1fr 44px;gap:0 12px;padding:12px 20px 0}
+  .wordmark{grid-row:1;grid-column:1;font-size:12px;justify-self:start}
+  .wordmark em{font-size:17px}
+  #lock-world{grid-row:1;grid-column:2}
+  .site-header nav{display:grid;grid-column:1/-1;grid-template-columns:repeat(4,minmax(0,1fr));width:100%;gap:0;margin:3px 0 0;border-top:1px solid #bfa4d715}
+  .site-header nav a,.site-header nav a:last-child{display:flex;justify-content:center;min-height:48px;font-size:11px;letter-spacing:0}
+  .hero{padding-top:42px}
+  .hero-description{font-size:13px;max-width:350px}
+  .chapter-divider{margin-block:0 25px}
+  .poem-section{padding-top:38px;padding-bottom:28px}
+  .poem-aside .eyebrow{font-size:9px}
+  .poem-afterword{font-size:11px}
+  .letters{padding-top:48px;padding-bottom:55px}
+  .letters .section-intro h2{font-size:34px}
+  .section-intro>p:last-child,.question-heading>p:last-child{font-size:13px}
+  .section-intro .eyebrow{font-size:9px}
+  .note-card{padding:24px 20px;grid-template-columns:32px 1fr}
+  .note-art{height:auto}
+  .note-card h3{font-size:25px}
+  .note-card .eyebrow{font-size:9px}
+  .note-teaser{font-size:12px}
+  .note-open{font-size:11px}
+  .memories,.favorites-section,.play-section{padding-top:55px;padding-bottom:55px}
+  .memory-cover p{font-size:8px}
+  .memory-cover small{font-size:10px}
+  .questions-section{padding-top:0;padding-bottom:55px;gap:22px}
+  .letter-copy{font-size:13px}
+  .full-memory-caption p{font-size:12px}
+}
+@media(max-width:360px){.site-header.wrap{padding-inline:16px}.site-header nav a{font-size:10px}}
