@@ -1,0 +1,115 @@
+{
+  "name": "Adrienne",
+  "nickname": "HoneyBunny",
+  "signature": "Always, me",
+  "started": "2026-09-24",
+  "assistantMessage": "Ophelia approves this message. Payment in cuddles is now due. 🐾",
+  "compliments": [
+    "Your smile is a very good reason to lose my train of thought.",
+    "My memory might be chrome-dome territory. You are the part I keep coming back to.",
+    "Your book boyfriend could never send you this many forehead kisses.",
+    "You look especially adorable when you outsmart me.",
+    "An entire galaxy, and I’m still most interested in sitting next to you.",
+    "Grogu is adorable. You still win. I’m prepared to defend this opinion before the entire galaxy.",
+    "Grogu, Disney magic, and you beside me. That sounds like a pretty good little universe.",
+    "We went stargazing. I got distracted by your eyes. I’d make the same mistake again."
+  ],
+  "questions": [
+    {"title":"Which kind of movie night?", "answers":["Ariel & Disney magic","A Pixar comfort night","Disney Channel throwbacks","A galaxy far, far away"], "replies":["The Little Mermaid gets first pick. Then Hercules, Tangled, or Frozen 2. Your choice, my favorite company.","Ratatouille, Monsters, Inc., or Toy Story. You pick; I’ll find a spot beside you.","High School Musical, Descendants, or Starstruck. Consider this my application to be your movie-night duet partner.","Grogu, the droids, Vader, and Maul. That’s a pretty great lineup. I’m mostly here for your commentary."], "artIds":["m12","m14","m15","m10"]},
+    {"title":"What kind of love note finds you today?", "answers":["Something soft","Something silly","A little flirting"], "replies":["You deserve a gentle day and someone who is happy to hear from you.","I made an entire website because apparently ‘hey, you’re cute’ needed a dramatic upgrade.","I was going to say something smooth, but then I imagined your smile and forgot my lines."]},
+    {"title":"Our imaginary front-row seats?", "answers":["Bruno Mars","Ariana Grande","Harry Styles","Luke Combs"], "replies":["A Bruno Mars night with you? Very easy to picture.","Ariana on stage, you beside me. That sounds like a pretty lovely evening.","Harry Styles, a room full of songs, and my favorite company.","Luke Combs, you close, and a song to sway to. I like that thought."]}
+  ],
+  "poemTitle": "That night with you",
+  "poem": [
+    ["I know I forget a lot of things,", "but I remember that night.", "We went out to look at the stars,", "and I kept looking at your eyes."],
+    ["I know you’ve given a lot of love", "and haven’t always got it back.", "I wish I had the right words for that.", "I just know you deserved better."],
+    ["I like getting to know you,", "even the little things you think don’t matter.", "I want to keep showing up for you", "and make you smile whenever I can."],
+    ["So this is just because, HoneyBunny.", "No big reason. I was thinking of you.", "I don’t always know how to say it,", "but you mean a whole lot to me."]
+  ],
+  "poemAfterword": "You deserve to receive the same tenderness you give. I hope the little things I do help you feel that.",
+  "notes": [
+    {"label":"OPEN WHEN", "title":"You need a soft place", "teaser":"A little reminder, tucked away for you.", "body":["HoneyBunny, you deserve care on the ordinary days, too. You don't have to do something extraordinary to deserve a gentle word, a listening ear, or a forehead kiss.", "Thank you for letting me get to know you, one little piece at a time. I like the person I'm finding. A lot."], "icon":"heart"},
+    {"label":"ACROSS THE GALAXY", "title":"Your little smile crew", "teaser":"A few familiar faces, just for you.", "body":["Grogu and the whole droid crew are on smile duty: R2-D2, C-3PO, BB-8, Chopper, K-2SO, BD-1, D-O, and every little droid in between.", "Vader and Maul can keep things dramatic. I’m here for the quiet moments beside you and the forehead kisses.", "Ophelia has cuddles covered. I’d still like a spot next to you."], "icon":"star", "artIds":["m10","m11"]},
+    {"label":"BETWEEN THE PAGES", "title":"A little competition", "teaser":"Your book boyfriend should be nervous.", "body":["Your book boyfriend has competition. I come with actual hugs, terrible jokes, and the ability to distract you from the page with one well-timed kiss.", "I'll let you finish the chapter, HoneyBunny. Probably."], "icon":"book"}
+  ],
+  "assets": [
+    {"id":"m01","source":"photo-1.jpg","mime":"image/jpeg"},
+    {"id":"m02","source":"photo-2.jpg","mime":"image/jpeg"},
+    {"id":"m03","source":"photo-3.jpg","mime":"image/jpeg"},
+    {"id":"m04","source":"photo-4.jpg","mime":"image/jpeg"},
+    {"id":"m05","source":"photo-5.jpg","mime":"image/jpeg"},
+    {"id":"m06","source":"photo-6.jpg","mime":"image/jpeg"},
+    {"id":"m07","source":"photo-7.jpg","mime":"image/jpeg"},
+    {"id":"m08","source":"moment.mp4","mime":"video/mp4"},
+    {"id":"m09","source":"poster.jpg","mime":"image/jpeg"},
+    {"id":"m10","source":"court-grogu.jpg","mime":"image/jpeg"},
+    {"id":"m11","source":"court-vader.jpg","mime":"image/jpeg"},
+    {"id":"m12","source":"court-ariel.jpg","mime":"image/jpeg"},
+    {"id":"m13","source":"court-tangled.jpg","mime":"image/jpeg"},
+    {"id":"m14","source":"court-ratatouille.jpg","mime":"image/jpeg"},
+    {"id":"m15","source":"court-hsm.jpg","mime":"image/jpeg"},
+    {"id":"m16","source":"court-r2.jpg","mime":"image/jpeg"},
+    {"id":"m17","source":"court-c3po.jpg","mime":"image/jpeg"},
+    {"id":"m18","source":"court-bb8.jpg","mime":"image/jpeg"},
+    {"id":"m19","source":"court-chopper.jpg","mime":"image/jpeg"},
+    {"id":"m20","source":"court-k2so.jpg","mime":"image/jpeg"},
+    {"id":"m21","source":"court-bd1.jpg","mime":"image/jpeg"},
+    {"id":"m22","source":"court-do.jpg","mime":"image/jpeg"},
+    {"id":"m23","source":"court-maul.jpg","mime":"image/jpeg"},
+    {"id":"m24","source":"court-hercules.jpg","mime":"image/jpeg"},
+    {"id":"m25","source":"court-frozen.jpg","mime":"image/jpeg"},
+    {"id":"m26","source":"court-monsters.jpg","mime":"image/jpeg"},
+    {"id":"m27","source":"court-toys.jpg","mime":"image/jpeg"},
+    {"id":"m28","source":"court-descendants.jpg","mime":"image/jpeg"},
+    {"id":"m29","source":"court-starstruck.jpg","mime":"image/jpeg"}
+  ],
+  "favoriteCategories": [
+    {"label":"Star Wars","artIds":["m10","m16","m17","m18","m19","m20","m21","m22","m11","m23"]},
+    {"label":"Disney","artIds":["m12","m24","m13","m25"]},
+    {"label":"Pixar","artIds":["m14","m26","m27"]},
+    {"label":"Disney Channel","artIds":["m15","m28","m29"]}
+  ],
+  "courtGroups": [
+    {"label":"Across the galaxy","artIds":["m10","m11"]},
+    {"label":"Disney wishes","artIds":["m12","m13"]},
+    {"label":"Cozy favorites","artIds":["m14","m15"]}
+  ],
+  "artworks": [
+    {"id":"m10","title":"Your little smile crew","cast":"Grogu · R2-D2 · C-3PO · BB-8 · Chopper · K-2SO · BD-1 · D-O","caption":"They came to make you smile. I came to sit next to you.","members":["m10","m16","m17","m18","m19","m20","m21","m22"]},
+    {"id":"m11","title":"Dark side. Soft spot.","cast":"Darth Vader · Darth Maul","caption":"Vader and Maul brought the drama. I’m mostly here for the forehead kisses.","members":["m11","m23"]},
+    {"id":"m12","title":"Every wish, a little sweeter","cast":"The Little Mermaid · Hercules","caption":"From Ariel’s shore to Hercules’ stars, I’d still pick a quiet moment with you.","members":["m12","m24"]},
+    {"id":"m13","title":"Lanterns, snowflakes & you","cast":"Tangled · Frozen 2","caption":"A Tangled kind of evening or a Frozen 2 kind of night. I’m happy beside you.","members":["m13","m25"]},
+    {"id":"m14","title":"Comfort characters, favorite company","cast":"Ratatouille · Monsters, Inc. · Toy Story","caption":"The tiny chef’s on snack duty. The monsters brought the cozy. The toys saved us a seat.","members":["m14","m26","m27"]},
+    {"id":"m15","title":"One more movie-night encore","cast":"High School Musical · Descendants · Starstruck","caption":"You choose the rerun. I’ll find an excuse to sit closer.","members":["m15","m28","m29"]}
+  ],
+  "characters": [
+    {"id":"m10","label":"Grogu","role":"Expert in tiny distractions","sourcePage":"https://www.starwars.com/databank/grogu","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m11","label":"Darth Vader","role":"Head of dramatic affection","sourcePage":"https://www.starwars.com/databank/darth-vader","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m12","label":"Ariel & friends","role":"Keepers of little wishes","sourcePage":"https://movies.disney.com/the-little-mermaid","credit":"Disney"},
+    {"id":"m13","label":"Tangled","role":"The lantern-light department","sourcePage":"https://movies.disney.com/tangled","credit":"Disney"},
+    {"id":"m14","label":"Ratatouille","role":"Tiny chef, enormous heart","sourcePage":"https://movies.disney.com/ratatouille","credit":"Disney / Pixar"},
+    {"id":"m15","label":"High School Musical","role":"The movie-night duet department","sourcePage":"https://movies.disney.com/high-school-musical","credit":"Disney"},
+    {"id":"m16","label":"R2-D2","role":"Keeper of little love notes","sourcePage":"https://www.starwars.com/databank/r2-d2","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m17","label":"C-3PO","role":"Fluent in affectionate overthinking","sourcePage":"https://www.starwars.com/databank/c-3po","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m18","label":"BB-8","role":"Rolling in with a little extra love","sourcePage":"https://www.starwars.com/databank/bb-8","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m19","label":"Chopper","role":"Mischief coordinator, naturally","sourcePage":"https://www.starwars.com/databank/Chopper","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m20","label":"K-2SO","role":"Security for your soft side","sourcePage":"https://www.starwars.com/databank/k-2so-kay-tuesso","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m21","label":"BD-1","role":"Small friend, big encouragement","sourcePage":"https://www.starwars.com/databank/bd-1","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m22","label":"D-O","role":"A tiny reminder to take your time","sourcePage":"https://www.starwars.com/databank/d-o","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m23","label":"Darth Maul","role":"Taking smile duty very seriously","sourcePage":"https://www.starwars.com/databank/maul","credit":"Lucasfilm / StarWars.com"},
+    {"id":"m24","label":"Hercules","role":"A heroic amount of heart","sourcePage":"https://movies.disney.com/hercules","credit":"Disney"},
+    {"id":"m25","label":"Frozen 2","role":"Official bring-a-blanket crew","sourcePage":"https://movies.disney.com/frozen-2","credit":"Disney"},
+    {"id":"m26","label":"Monsters, Inc.","role":"The comfort crew is clocking in","sourcePage":"https://movies.disney.com/monsters-inc","credit":"Disney / Pixar"},
+    {"id":"m27","label":"Toy Story","role":"Saving a seat for our next chapter","sourcePage":"https://movies.disney.com/toy-story","credit":"Disney / Pixar"},
+    {"id":"m28","label":"Descendants","role":"A little wicked, a lot of heart","sourcePage":"https://d23.com/news-briefs-july-28-2015/","credit":"Disney / D23"},
+    {"id":"m29","label":"Starstruck","role":"Still a little starstruck by you","sourcePage":"https://movies.disney.com/starstruck","credit":"Disney"}
+  ],
+  "memories": [
+    {"id":"m02","title":"My favorite company", "caption":"Every little adventure is better with you."},
+    {"id":"m03","title":"Right here", "caption":"This is a pretty wonderful place to be."},
+    {"id":"m04","title":"The quiet kind of happy", "caption":"A little moment I wanted to keep."},
+    {"id":"m05","title":"That face", "caption":"Yes, I am smiling at my screen again."},
+    {"id":"m06","title":"Another little keepsake", "caption":"A tiny piece of our story."},
+    {"id":"m07","title":"One more for the collection", "caption":"Making room for all the memories still to come."}
+  ]
+}

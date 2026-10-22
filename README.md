@@ -14,14 +14,13 @@ Open http://127.0.0.1:4173 and enter the secret key provided separately. Opening
 
 ## Put it on GitHub
 
-The upload ZIP contains the repository files, including the already encrypted `dist` folder. It deliberately excludes `private`, your key, original media, and editable personal writing.
+The current upload package is `HoneyBunny-Full-Site.zip`, next to this project folder. It contains the complete encrypted website with `index.html` at the top level. It deliberately excludes this editable project, the key, original media, and private writing. There is no outer `dist` folder in this ZIP and no custom workflow is required.
 
-1. Extract the supplied ZIP on your computer first. Do not upload the ZIP file itself.
-2. At https://github.com/new, create a repository with a neutral name such as `little-universe`. Choose a private repository if your plan supports Pages from private repositories. GitHub Free requires a public repository for Pages; read the privacy warning below before using that option. Adding an empty README at creation makes the upload button easy to find.
-3. In the repository's **Code** tab, choose **Add file → Upload files**. Drag the extracted ZIP's contents into the upload area, then choose **Commit changes**. Upload the contents, not their enclosing folder. At the top level you should see `dist`, `src`, `scripts`, `.github`, `package.json`, and this README. Check that `.github/workflows/pages.yml` was included.
-4. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. The supplied workflow is already configured; you do not need to select a suggested template.
-5. In **Actions**, select **Publish encrypted website**, then **Run workflow** and confirm **Run workflow**. Publication is manual, so uploading alone does not publish it. If the workflow is missing, check that `.github/workflows/pages.yml` was uploaded to the default branch.
-6. When the run succeeds, open **Settings → Pages → Visit site**, or use the deployment URL shown in the workflow run. Test that link in a private/incognito window with the key supplied separately, then send her the link and key. She does not need a GitHub account to open an ordinary Pages site.
+1. Extract `HoneyBunny-Full-Site.zip` on your computer. Do not upload the ZIP file itself.
+2. Use your existing empty repository, or create one at https://github.com/new with a neutral name such as `little-universe`. Adding an empty README at creation makes the upload button easy to find. GitHub Free requires a public repository for Pages; private-repository Pages requires an eligible paid plan. Read the privacy warning below.
+3. In the repository's **Code** tab, choose **Add file → Upload files**, or **uploading an existing file** on an empty-repository setup screen. Upload everything inside the extracted package, not its enclosing folder, then commit the upload to the default branch, normally `main`. You should see `index.html`, `app.js`, `vault.json`, the CSS files, and `sealed` directly in the repository. Do not upload the local `honeybunny` project folder.
+4. In **Settings → Pages → Build and deployment**, set **Source** to **Deploy from a branch**. Select **main** (or the branch containing the uploaded files) and **/(root)**, then click **Save**. This replaces the earlier custom-workflow setup. Do not configure the old Static HTML workflow pointing at `dist` for this root-level package.
+5. Allow time for GitHub to publish, then refresh **Settings → Pages** and click **Visit site**. GitHub says publication can take up to 10 minutes. Test the live URL in a private/incognito window with the separately supplied key, then send her the URL and key. She does not need a GitHub account to open an ordinary Pages site.
 
 GitHub Pages from a private repository requires an eligible plan; GitHub Free personal accounts generally need a public repository for Pages. True private Pages access requires GitHub Enterprise Cloud organization support. A private repository by itself does **not** make an ordinary Pages site private. See [GitHub Pages availability](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) and [Pages access control](https://docs.github.com/en/enterprise-cloud@latest/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site).
 
@@ -29,7 +28,9 @@ This site instead encrypts the personal content before upload, so the public-fac
 
 ## Where your private things live
 
-The complete local project includes `private/content.json`, `private/media/`, and `private/access-key.txt`. These are all ignored by Git and are not included in the upload ZIP. Keep a backup of this local folder; your repository will contain the encrypted build, not this editable private material. Upload the supplied ZIP or use normal Git, which respects `.gitignore`. Do not manually upload the `private` folder through GitHub's website.
+The complete local project includes `private/content.json`, `private/media/`, and `private/access-key.txt`. These are all ignored by Git and are not included in the upload ZIP. Keep this local folder; the website repository contains only the encrypted build, not the editable private material. Upload only the contents of the supplied full-site ZIP. Never upload the whole local project through GitHub's website.
+
+The working folder was tidied on October 21, 2026. Previous ZIPs, previews, and asset-preparation helpers are recoverable under `work/archive/cleanup-2026-10-21` in the workspace. That folder also contains `PRIVATE-project-backup.zip`, a complete pre-cleanup backup including private originals and the key. It is local recovery material, not an upload package.
 
 The current key is a memorable nickname explicitly chosen by the owner. This is much weaker protection than the originally generated random key: public ciphertext can be downloaded and guessed against offline. Anyone who guesses the nickname can decrypt the photos and writing. For genuinely sensitive or private-only content, use a strong random passphrase or an authenticated host instead. Never upload the key or the `private` folder.
 
@@ -44,7 +45,7 @@ npm run build -- --allow-memorable-key
 npm run verify
 ```
 
-The build requires the explicit flag above for a short, memorable key. Strong keys of at least 20 characters do not require that flag. Commit the changed `src`, `scripts`, and `dist` files. Never commit `private`. Run the publishing workflow again when you are ready. The GitHub workflow publishes the prebuilt encrypted files; it does not need the secret key or private source files.
+The build requires the explicit flag above for a short, memorable key. Strong keys of at least 20 characters do not require that flag. After rebuilding, upload all the contents of `dist` directly into the website repository's root. Upload the full set together because each build creates new encrypted media and metadata. With branch publishing enabled, committing those files publishes the update. Never upload `private`, the key, or the local backup.
 
 To rotate the key, replace `private/access-key.txt` with a new cryptographically random key of at least 20 characters and rebuild. Previously downloaded website versions remain decryptable with their old key; key rotation cannot revoke copies someone already saved.
 
@@ -63,6 +64,6 @@ Click the lock in the header to clear the displayed content and revoke in-memory
 - System reduced-motion preferences are respected. The footer also offers a sparkle/motion toggle.
 - The questions react during the visit only; this version does not collect or send answers to either partner.
 - The four chapter links remain visible on phones. The poem and notes come first, followed by personal memories, favorite worlds, and games/questions.
-- Your favorites has four categories: Star Wars, Disney, Pixar, and Disney Channel. Each favorite has one consistently sized picture card; opening it reveals its affectionate royal job title. All twenty pictures appear exactly once across the categories.
-- Character pictures also appear in the royal note, matching movie-night answers, and the brain-teaser reward. Only the chosen category's pictures are displayed.
+- Your favorites has four categories: Star Wars, Disney, Pixar, and Disney Channel. Each favorite has one consistently sized picture card; opening it reveals its little message. All twenty pictures appear exactly once across the categories.
+- Character pictures also appear in the smile-crew note, matching movie-night answers, and the brain-teaser reward. Only the chosen category's pictures are displayed.
 - Character pictures are existing official Disney, Pixar, Lucasfilm, and D23 promotional images. Images are bundled locally and encrypted like the personal photos. The gallery includes source credits; clicking a credit opens the publisher’s original page. The affectionate job titles and messages are original website copy.
